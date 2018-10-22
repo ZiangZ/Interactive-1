@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Example from Max</title>
+  <meta name="description" content="Image Example from Max">
+  <meta name="author" content="Interactive 1">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+<style>
+
+body {
+  margin:0px;
+  padding:0px;
+}
+
+img {
+  width:100px;
+  float:right;
+  margin:20px;
+}
+
+div {
+  width:50vw;
+  height:50vh;
+  float:left;
+  background-color: yellow;
+  background-image: url("image/download1.png");
+  background-size:cover;
+  background-position: center;
+}
+
+.different {
+  background-image: url("image/building.jpg");
+
+}
+
+.different-LOGO {
+  background-image: url("image/LOGO OP.png");
+  background-color: green;
+}
+
+.different-LOGO:hover {
+  animation: blinker steps(1) 100ms infinite alternate;
+  background-image: url("image/LOGO-04.png");
+  background-color: red;
+
+}
+
+@keyframes blinker {
+  0% { background-image: url("image/LOGO OP.png"); }
+  50% { background-image: url("image/LOGO-04.png"); }
+  100% { background-image: url("image/LOGO OP.png"); }
+}
+
+
+P{
+  COLOR:RED;
+  text-align: center;
+  font-size: 60PX;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div>
+  <p><h1>Downloading</h1> generally transfers entire files for local storage and later use,
+    as contrasted with streaming, where the data is used nearly immediately,
+    while the transmission is still in progress, and which may not be stored long-term.
+    Websites that offer streaming media or media displayed in-browser, such as YouTube,
+    increasingly place restrictions on the ability of users to save these materials
+    to their computers after they have been received.
+
+  <h1>Uploading</h1>Transferring data from one remote system to another under the control of a local system.
+  Remote uploading is used by some online file hosting services.
+  It is also used when the local computer has a slow connection to the remote systems,
+  but they have a fast connection between them. Without remote uploading functionality,
+  the data would have to first be downloaded to the local host and then uploaded to the
+  remote file hosting server, both times over slow connections.</P>
+</div>
+<div class="different"></div>
+<div></div>
+<div class="different-LOGO"></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+
+</body>
+</html>
