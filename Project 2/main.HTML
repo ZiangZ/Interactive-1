@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Faster+One|Muli:900|Raleway|Ubuntu" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+
+    </script>
+
+<style>
+
+body {
+  background: black;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.back1yellow{
+position: absolute;
+left:85%;
+width:7%;
+background-color: #d2a000;
+height: 100%;
+animation: moving1 7s infinite alternate;
+transition: 3s;
+}
+.back2blue{
+position: absolute;
+left:90%;
+width:5%;
+background-color: #231eac;
+height: 100%;
+animation: moving2 7s infinite alternate;
+transition: 3s;
+}
+.back3red{
+position: absolute;
+left:95%;
+width:3%;
+background-color: #ad0000;
+height: 100%;
+animation: moving3 7s infinite alternate;
+transition: 3s;
+}
+
+@keyframes moving1 {
+  0% {left: 85%; width: 7%;}
+  50% {left: 70%; width: 10%;}
+  100% {left: 80%; width :5%;}
+}
+@keyframes moving2 {
+  0% {left: 90%; width: 5%;}
+  50% {left: 95%; width: 8%;}
+  75% {left: 75%; width: 15%;}
+  100% {left: 85%; width :20%;}
+}
+@keyframes moving3 {
+  0% {left: 95%; width: 3%;}
+  50% {left: 65%; width: 12%;}
+  100% {left: 90%; width :5%;}
+}
+.logo {
+  position: absolute;
+  TOP:30%;
+  LEFT:31.5%;
+  right:31.5%;
+    height:185.4px;
+    width: 522px;
+    animation: logo 1s forwards;
+}
+
+.loadingicon{
+  position: absolute;
+  TOP:18px;
+  LEFT:60px;
+    height:auto;
+    height: 48px;
+    width:64px;
+    opacity: 1;
+    animation: mainloading 1s forwards;
+    animation-delay: 3s;
+}
+
+.greenicon {
+  position: absolute;
+  left:15px;
+  top: 30px;
+  height:20px;
+  width:20px;
+  opacity: 0;
+  border-radius: 100%;
+  background-color: green;
+  animation: greenicon 1s forwards;
+  animation-delay: 3s;
+}
+
+        @keyframes logo {
+          0% {  top:-5%; transform: scale(0.3)}
+          100% { top:-5%; transform: scale(0.3) }
+        }
+
+        @keyframes welcome {
+          0%   {opacity: 1;}
+          100% {opacity: 0;}
+        }
+
+        @keyframes mainloading {
+          0%   {opacity: 0;}
+          50%  {opacity: 1;}
+          100% {opacity: 0;}
+        }
+
+        @keyframes greenicon {
+          0%   {opacity: 0;}
+          100% {opacity: 1;}
+        }
+
+.recent{
+  position: absolute;
+  top:13%;
+  left:15px;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Muli',Bold; sans-serif;
+  color:white;
+  animation: main 3s forwards;
+}
+@keyframes main {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+  .gta {
+    position: absolute;
+    top:20%;
+    left:15px;
+    height:300px;
+    width:300px;
+    animation: main 1s forwards;
+  }
+
+  .fallout {
+    position: absolute;
+    top:20%;
+    left:330px;
+    height:300px;
+    width:300px;
+    animation: main 1s forwards;
+  }
+
+  .mh {
+    position: absolute;
+    top:20%;
+    left:645px;
+    height:300px;
+    width:300px;
+    animation: main 1s forwards;
+  }
+
+  .thumper {
+    position: absolute;
+    top:20%;
+    left:960px;
+    height:300px;
+    width:300px;
+    animation: main 1s forwards;
+  }
+
+  .god {
+    position: absolute;
+    top:20%;
+    left:1275px;
+    height:300px;
+    width:300px;
+    animation: main 1s forwards;
+  }
+
+.gta:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.fallout:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.mh:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.thumper:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.god:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+  <div class="back1yellow"></div>
+  <div class="back2blue"></div>
+  <div class="back3red"></div>
+  <div class="greenicon"></div>
+<div class="logo"> <img src="618/NONCLOUD.png"> </div>
+<div class="loadingicon"> <img src="618/loading.gif"> </div>
+
+<div class="recent">Recent Played</div>
+<div class="gta"> <img src="GAME/gta.png"> </div>
+<div class="fallout"><img src="GAME/fallout.png"></div>
+<div class="mh"><img src="GAME/mh.png"></div>
+<div class="thumper"><img src="GAME/thumper.jpg"></div>
+<div class="god"><img src="GAME/god.png"></div>
+</body>
+</html>
