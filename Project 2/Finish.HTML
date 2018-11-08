@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="6">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Faster+One|Muli:900|Raleway|Ubuntu" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+
+    </script>
+
+<style>
+
+body {
+  background-color: black;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+                    .back1yellow{
+                    position: absolute;
+                    top:35%;
+                    left: 0%; width :5%;opacity: 0.9;
+                    background-color: #d2a000;
+                    height: 100%;
+                    animation: moving1 3s forwards;
+                    transition: 3s;
+
+                    }
+                    .back2blue{
+                    position: absolute;
+                    top:68%;
+                    left: 0%; width :10%;opacity: 0.9;
+                    background-color: #231eac;
+                    height: 100%;
+                    animation: moving2 3s forwards;
+                    transition: 3s;
+
+                    }
+                    .back3red{
+                    position: absolute;
+                    top:2%;
+                    left: 0%; width :20%;opacity: 0.9;
+                    background-color: #ad0000;
+                    height: 100%;
+                    animation: moving3 3s forwards;
+                    transition: 3s;
+
+                    }
+
+                    @keyframes moving1 {
+                      0% {left: 0%; width :10%;opacity: 0.9}
+
+                      100% {left:85%; width:7%; opacity: 1;}
+                    }
+                    @keyframes moving2 {
+                      0% {left: 0%; width :15%;opacity: 0.9}
+
+                      100% {left:90%; width:5%; opacity: 1;}
+                    }
+                    @keyframes moving3 {
+                      0% {left: 0%; width :30%;opacity: 0.9}
+
+                      100% {left:95%; width:3%;opacity: 1;}
+
+                    }
+                    .logo {
+                      position: absolute;
+                      TOP:30%;
+                      LEFT:35.5%;
+                      right:35.5%;
+                        height:185.4px;
+                        width: 522px;
+                        animation: logo 1s forwards;
+                    }
+
+                    .loadingicon{
+                      position: absolute;
+                      TOP:26px;
+                      LEFT:30px;
+                        height:auto;
+                        height: 48px;
+                        width:64px;
+                        opacity: 1;
+                        animation: mainloading 20s forwards;
+                        animation-delay: 1s;
+                    }
+
+                    .greenicon {
+                      position: absolute;
+                      left:15px;
+                      top: 38px;
+                      height:20px;
+                      width:20px;
+                      opacity: 1;
+                      border-radius: 100%;
+                      background-color: green;
+
+                    }
+
+                    .cloud {
+                      position: absolute;
+                      left:90px;
+                      top: 24px;
+                      height: 50px;
+                      width:50px;
+                      opacity: 1;
+
+
+                    }
+
+                    .cloud:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+                    .user {
+                      position: absolute;
+                      left:150px;
+                      top: 25px;
+                      height: 40px;
+                      width:40px;
+                      opacity: 1;
+                    }
+
+                    .user:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+
+
+
+
+
+.Words1 {
+  position: absolute;
+  left:20%;
+  top:10%;
+  text-align: center;
+  font-family: 'Muli',Bold; sans-serif;
+  font-size:120px;
+  color: white;
+  opacity: 0;
+  animation: sitback 1s forwards;
+  animation-delay: 2s;
+}
+
+.Words2 {
+  position: absolute;
+  left:30%;
+  right:30%;
+  top:50%;
+  text-align: center;
+  font-family: 'Muli',Bold; sans-serif;
+  font-size:30px;
+  color: white;
+  opacity: 0;
+  animation: sitback 1s forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes sitback {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
+
+
+
+
+
+
+                            @keyframes logo {
+                              0% {  top:-5%; transform: scale(0.3)}
+                              100% { top:-5%; transform: scale(0.3) }
+                            }
+
+                            @keyframes mainloading {
+                              0%   {opacity: 0;}
+                              50%  {opacity: 1;}
+                              100% {opacity: 0;}
+                            }
+
+                            @keyframes cloudicon {
+                              0%   {opacity: 0;}
+                              100% {opacity: 1;}
+                            }
+
+                            @keyframes main {
+                              0%   {opacity: 0;}
+                              100% {opacity: 1;}
+                            }
+
+                            @keyframes gone {
+                              0%   {opacity: 1;}
+                              100% {opacity: 0;}
+                            }
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+
+  <div class="back1yellow"></div>
+  <div class="back2blue"></div>
+  <div class="back3red"></div>
+  <div class="greenicon"></div>
+
+  <a href="MAIN.HTML">
+<a href="main.html">
+<div class="logo"> <img src="618/NONCLOUD.png"> </div>
+</A>
+
+<div class="loadingicon"> <img src="618/loading.gif"> </div>
+
+<a href="cloud.html">
+<div class="cloud"><img src="icons/cloud.png"></div>
+</a>
+
+<a href="user.html">
+<div class="user"><img src="icons/user.png"></div>
+</a>
+
+
+
+
+
+<div class="words1">
+  Thank You <br>
+  For Using NonCloud.
+</div>
+  <div class="words2">
+Hit LOGO to go back to main page.
+</div>
+
+<DIV CLASS="PLAY">PLAY</DIV>
+
+<!-- FROM CODEPEN -->
+
+
+</body>
+</html>

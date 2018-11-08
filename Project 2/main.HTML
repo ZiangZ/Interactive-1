@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <meta name="description" content="main">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
       <link href="https://fonts.googleapis.com/css?family=Faster+One|Muli:900|Raleway|Ubuntu" rel="stylesheet">
@@ -25,189 +25,349 @@ img {
   width: 100%;
   height: 100%;
 }
-.back1yellow{
-position: absolute;
-left:85%;
-width:7%;
-background-color: #d2a000;
-height: 100%;
-animation: moving1 7s infinite alternate;
-transition: 3s;
-}
-.back2blue{
-position: absolute;
-left:90%;
-width:5%;
-background-color: #231eac;
-height: 100%;
-animation: moving2 7s infinite alternate;
-transition: 3s;
-}
-.back3red{
-position: absolute;
-left:95%;
-width:3%;
-background-color: #ad0000;
-height: 100%;
-animation: moving3 7s infinite alternate;
-transition: 3s;
-}
+                    .back1yellow{
+                    position: absolute;
+                    left:85%;
+                    width:7%;
+                    background-color: #d2a000;
+                    height: 100%;
+                    animation: moving1 7s infinite alternate;
+                    transition: 3s;
+                    }
+                    .back2blue{
+                    position: absolute;
+                    left:90%;
+                    width:5%;
+                    background-color: #231eac;
+                    height: 100%;
+                    animation: moving2 7s infinite alternate;
+                    transition: 3s;
+                    }
+                    .back3red{
+                    position: absolute;
+                    left:95%;
+                    width:3%;
+                    background-color: #ad0000;
+                    height: 100%;
+                    animation: moving3 7s infinite alternate;
+                    transition: 3s;
+                    }
 
-@keyframes moving1 {
-  0% {left: 85%; width: 7%;}
-  50% {left: 70%; width: 10%;}
-  100% {left: 80%; width :5%;}
-}
-@keyframes moving2 {
-  0% {left: 90%; width: 5%;}
-  50% {left: 95%; width: 8%;}
-  75% {left: 75%; width: 15%;}
-  100% {left: 85%; width :20%;}
-}
-@keyframes moving3 {
-  0% {left: 95%; width: 3%;}
-  50% {left: 65%; width: 12%;}
-  100% {left: 90%; width :5%;}
-}
-.logo {
+                    @keyframes moving1 {
+                      0% {left: 85%; width: 7%;}
+                      50% {left: 70%; width: 10%;}
+                      100% {left: 80%; width :5%;}
+                    }
+                    @keyframes moving2 {
+                      0% {left: 90%; width: 5%;}
+                      50% {left: 95%; width: 8%;}
+                      75% {left: 75%; width: 15%;}
+                      100% {left: 85%; width :20%;}
+                    }
+                    @keyframes moving3 {
+                      0% {left: 95%; width: 3%;}
+                      50% {left: 65%; width: 12%;}
+                      100% {left: 90%; width :5%;}
+                    }
+                    .logo {
+                      position: absolute;
+                      TOP:30%;
+                      LEFT:35.5%;
+                      right:35.5%;
+                        height:185.4px;
+                        width: 522px;
+                        animation: logo 1s forwards;
+                    }
+
+                    .loadingicon{
+                      position: absolute;
+                      TOP:26px;
+                      LEFT:30px;
+                        height:auto;
+                        height: 48px;
+                        width:64px;
+                        opacity: 1;
+                        animation: mainloading 1s forwards;
+                        animation-delay: 3s;
+                    }
+
+                    .greenicon {
+                      position: absolute;
+                      left:15px;
+                      top: 38px;
+                      height:20px;
+                      width:20px;
+                      opacity: 1;
+                      border-radius: 100%;
+                      background-color: green;
+
+                    }
+
+                    .cloud {
+                      position: absolute;
+                      left:90px;
+                      top: 24px;
+                      height: 50px;
+                      width:50px;
+                      opacity: 0;
+                      animation: cloudicon 1s forwards;
+                      animation-delay: 4s;
+                    }
+
+                    .cloud:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+                    .user {
+                      position: absolute;
+                      left:150px;
+                      top: 25px;
+                      height: 40px;
+                      width:40px;
+                      opacity: 0;
+                      animation: cloudicon 1s forwards;
+                      animation-delay: 4s;
+                    }
+
+                    .user:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+                                                          h1 {
+                                                            margin:1em auto;
+                                                            position: absolute;
+                                                            bottom: 2px;
+                                                            left: 15px;
+                                                            font-family: 'Muli',Bold; sans-serif;
+                                                            font-size:15px;
+                                                            color:GREY;
+                                                          }
+                                                          span:AFTER {
+                                                            content:"32";
+                                                            animation:change 8s infinite;
+                                                          }
+                                                          @keyframes change{
+                                                            0% {
+                                                              content:"121";
+                                                            }
+                                                            25% {
+                                                              content:"178";
+                                                            }
+                                                            35% {
+                                                              content:"91";
+                                                            }
+                                                            50% {
+                                                              content:"105";
+                                                            }
+                                                            75% {
+                                                              content:"148";
+                                                            }
+                                                            100% {
+                                                              content:"77";
+                                                            }
+                                                          }
+
+                            @keyframes logo {
+                              0% {  top:-5%; transform: scale(0.3)}
+                              100% { top:-5%; transform: scale(0.3) }
+                            }
+
+                            @keyframes welcome {
+                              0%   {opacity: 1;}
+                              100% {opacity: 0;}
+                            }
+
+                            @keyframes mainloading {
+                              0%   {opacity: 0;}
+                              50%  {opacity: 1;}
+                              100% {opacity: 0;}
+                            }
+
+
+                            @keyframes cloudicon {
+                              0%   {opacity: 0;}
+                              100% {opacity: 1;}
+                            }
+
+
+                .recent{
+                  position: absolute;
+                  top:13%;
+                  left:15px;
+                  text-align: left;
+                  font-size: 30px;
+                  font-family: 'Muli',Bold; sans-serif;
+                  color:white;
+                  animation: main 3s forwards;
+
+                }
+                @keyframes main {
+                  0%   {opacity: 0;}
+                  100% {opacity: 1;}
+                }
+                  .gta {
+                    position: absolute;
+                    top:20%;
+                    left:15px;
+                    height:300px;
+                    width:300px;
+                    animation: main 1s forwards;
+                    animation-delay: 0.1s;
+                    opacity: 0;
+                  }
+
+                  .thumper {
+                    position: absolute;
+                    top:20%;
+                    left:330px;
+                    height:300px;
+                    width:300px;
+                    animation: main 1s forwards;
+                    animation-delay: 0.2s;
+                    opacity: 0;
+                  }
+
+                  .mh {
+                    position: absolute;
+                    top:20%;
+                    left:645px;
+                    height:300px;
+                    width:300px;
+                    animation: main 1s forwards;
+                    animation-delay: 0.3s;
+                    opacity: 0;
+                  }
+
+                  .fallout {
+                    position: absolute;
+                    top:20%;
+                    left:960px;
+                    height:300px;
+                    width:300px;
+                    animation: main 1s forwards;
+                    animation-delay: 0.4s;
+                    opacity: 0;
+                  }
+
+                  .god {
+                    position: absolute;
+                    top:20%;
+                    left:1275px;
+                    height:300px;
+                    width:300px;
+                    animation: main 1s forwards;
+                    animation-delay: 0.5s;
+                    opacity: 0;
+                  }
+
+                .gta:hover{
+                  transition: 0.2s;
+                  transform: scale(1.1);
+                }
+
+                .fallout:hover{
+                  transition: 0.2s;
+                  transform: scale(1.1);
+                }
+
+                .mh:hover{
+                  transition: 0.2s;
+                  transform: scale(1.1);
+                }
+
+                .thumper:hover{
+                  transition: 0.2s;
+                  transform: scale(1.1);
+                }
+
+                .god:hover{
+                  transition: 0.2s;
+                  transform: scale(1.1);
+                }
+
+
+.collect{
   position: absolute;
-  TOP:30%;
-  LEFT:31.5%;
-  right:31.5%;
-    height:185.4px;
-    width: 522px;
-    animation: logo 1s forwards;
-}
-
-.loadingicon{
-  position: absolute;
-  TOP:18px;
-  LEFT:60px;
-    height:auto;
-    height: 48px;
-    width:64px;
-    opacity: 1;
-    animation: mainloading 1s forwards;
-    animation-delay: 3s;
-}
-
-.greenicon {
-  position: absolute;
-  left:15px;
-  top: 30px;
-  height:20px;
-  width:20px;
-  opacity: 0;
-  border-radius: 100%;
-  background-color: green;
-  animation: greenicon 1s forwards;
-  animation-delay: 3s;
-}
-
-        @keyframes logo {
-          0% {  top:-5%; transform: scale(0.3)}
-          100% { top:-5%; transform: scale(0.3) }
-        }
-
-        @keyframes welcome {
-          0%   {opacity: 1;}
-          100% {opacity: 0;}
-        }
-
-        @keyframes mainloading {
-          0%   {opacity: 0;}
-          50%  {opacity: 1;}
-          100% {opacity: 0;}
-        }
-
-        @keyframes greenicon {
-          0%   {opacity: 0;}
-          100% {opacity: 1;}
-        }
-
-.recent{
-  position: absolute;
-  top:13%;
+  top:60%;
   left:15px;
   text-align: left;
   font-size: 30px;
   font-family: 'Muli',Bold; sans-serif;
   color:white;
   animation: main 3s forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
 }
-@keyframes main {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
+
+.god2 {
+  position: absolute;
+  top:68%;
+  left:15px;
+  height:200px;
+  width:200px;
+  animation: main 1s forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
 }
-  .gta {
-    position: absolute;
-    top:20%;
-    left:15px;
-    height:300px;
-    width:300px;
-    animation: main 1s forwards;
-  }
 
-  .fallout {
-    position: absolute;
-    top:20%;
-    left:330px;
-    height:300px;
-    width:300px;
-    animation: main 1s forwards;
-  }
+.doom {
+  position: absolute;
+  top:68%;
+  left:230px;
+  height:200px;
+  width:200px;
+  animation: main 1s forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
 
-  .mh {
-    position: absolute;
-    top:20%;
-    left:645px;
-    height:300px;
-    width:300px;
-    animation: main 1s forwards;
-  }
+.gta2 {
+  position: absolute;
+  top:68%;
+  left:445px;
+  height:200px;
+  width:200px;
+  animation: main 1s forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
 
-  .thumper {
-    position: absolute;
-    top:20%;
-    left:960px;
-    height:300px;
-    width:300px;
-    animation: main 1s forwards;
-  }
+.mh2 {
+  position: absolute;
+  top:68%;
+  left:660px;
+  height:200px;
+  width:200px;
+  animation: main 1s forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
 
-  .god {
-    position: absolute;
-    top:20%;
-    left:1275px;
-    height:300px;
-    width:300px;
-    animation: main 1s forwards;
-  }
-
-.gta:hover{
+.god2:hover{
   transition: 0.2s;
   transform: scale(1.1);
 }
 
-.fallout:hover{
+.doom:hover{
   transition: 0.2s;
   transform: scale(1.1);
 }
 
-.mh:hover{
+.gta2:hover{
   transition: 0.2s;
   transform: scale(1.1);
 }
 
-.thumper:hover{
+.mh2:hover{
   transition: 0.2s;
   transform: scale(1.1);
 }
 
-.god:hover{
-  transition: 0.2s;
-  transform: scale(1.1);
-}
+/* FROM CODEPEN */
+
+
 
 
 </style>
@@ -224,12 +384,48 @@ transition: 3s;
   <div class="greenicon"></div>
 <div class="logo"> <img src="618/NONCLOUD.png"> </div>
 <div class="loadingicon"> <img src="618/loading.gif"> </div>
+<div class="cloud"><img src="icons/cloud.png"></div>
+<a href="cloud.html"></a>
+<div class="user"><img src="icons/user.png"></div>
+<div class="speed">pls work</DIV>
+
 
 <div class="recent">Recent Played</div>
-<div class="gta"> <img src="GAME/gta.png"> </div>
-<div class="fallout"><img src="GAME/fallout.png"></div>
-<div class="mh"><img src="GAME/mh.png"></div>
-<div class="thumper"><img src="GAME/thumper.jpg"></div>
-<div class="god"><img src="GAME/god.png"></div>
+
+<div class="gta">
+  <img src="GAME/gta.png">
+<a href="THUMPER.HTML"></a>
+ </div>
+
+<a href="THUMPER.HTML">
+    <div class="thumper">
+    <img src="GAME/thumper.jpg">
+  </div>
+</a>
+
+<div class="mh">
+  <img src="GAME/mh.png">
+<a href="http://www.webhostingsecretrevealed.com">
+</div>
+
+<div class="fallout">
+  <img src="GAME/fallout.png">
+<a href="http://www.webhostingsecretrevealed.com">
+</div>
+
+<div class="god">
+  <img src="GAME/god.png">
+<a href="http://www.webhostingsecretrevealed.com">
+</div>
+
+<div class="collect">Collection</div>
+<div class="god2"><img src="GAME/god.png"></div>
+<div class="doom"><img src="GAME/doom.png"></div>
+<div class="gta2"><img src="GAME/gta.png"></div>
+<div class="mh2"><img src="GAME/mh.png"></div>
+
+<!-- FROM CODEPEN -->
+<h1><span></span>GB/S.</h1>
+
 </body>
 </html>
