@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+
+      $(".start").click(function(){
+          $(this).addClass('user');
+      });
+
+    });
+
+  </script>
+<style>
+
+body {
+  background-image: url("PIC/google.png");
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.start {
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0px;
+      left:0px;
+      border-bottom: 60px solid green;
+      border-right: 60px solid transparent;
+      opacity: 0.6;
+    }
+
+.start:hover {
+  border-bottom: 60px solid green;
+  transition: s;
+opacity: 1;
+}
+
+.mainleft {
+  position: absolute;
+  left:0%;
+  top:25%;
+  height:400px;
+  width:100px;
+   border-radius: 0px 20px 20px 0px;
+  background-color: white;
+  opacity: 0.8;
+  animation: appear 1s; forwards;
+  transition: 1s;
+}
+
+.user {
+  position: absolute;
+  left:0%;
+  top:25%;
+  height:133px;
+  width:100px;
+  border-radius: 0px 20px 0px 0px;
+  background-color: #7ac943;
+  opacity: 0.4;
+  animation: appear 1s; forwards;
+  transition: 1s;
+}
+
+.usericon {
+  position: absolute;
+  left:1%;
+  top:28.5%;
+  height:75px;
+  width:65px;
+  background-image:url("PIC/user.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    opacity: 1;
+    animation: appear 1s; forwards;
+    transition: 1s;
+}
+
+.location {
+  position: absolute;
+  left:0%;
+  top:42%;
+  height:133px;
+  width:100px;
+  border-radius: 0px 0px 0px 0px;
+  background-color: #3fa9f5;
+  opacity: 0.4;
+  animation: appear 1s; forwards;
+  transition: 1s;
+}
+
+.locationicon {
+  position: absolute;
+  left:1%;
+  top:44%;
+  height:100px;
+  width:65px;
+  background-image:url("PIC/location.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    opacity: 1;
+    animation: appear 1s; forwards;
+    transition: 1s;
+}
+
+.thief {
+  position: absolute;
+  left:0%;
+  top:59%;
+  height:133px;
+  width:100px;
+  border-radius: 0px 0px 20px 0px;
+  background-color: #ff931e;
+  opacity: 0.4;
+  animation: appear 1s; forwards;
+  transition: 1s;
+}
+
+.thieficon {
+  position: absolute;
+  left:0.5%;
+  top:61%;
+  height:100px;
+  width:75px;
+  background-image:url("PIC/theif.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    opacity: 1;
+    animation: appear 1s; forwards;
+    transition: 1s;
+}
+
+.user:hover {
+  opacity: 1;
+}
+.usericon:hover {
+  opacity: 1;
+}
+.location:hover {
+  opacity: 1;
+}
+.locationicon:hover {
+  opacity: 1;
+}
+.thief:hover {
+  opacity: 1;
+}
+.thieficon:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="start"></div>
+
+
+</body>
+</html>

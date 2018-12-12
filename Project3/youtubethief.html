@@ -8,6 +8,83 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+
+      $(".js1").hover(function(){
+          $(this).toggleClass('change1');
+      });
+
+      $(".youtube").mouseover(function(){
+        console.log ("it worked");
+        $('.youtubemain').addClass('shome');
+        $('.thiefmain').addClass('youtubemain');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".youtube").mouseout(function(){
+        $('.youtubemain').removeClass('shome');
+      });
+
+      $(".netflix").mouseover(function(){
+        console.log ("it worked");
+        $('.youtubemain').addClass('netflixmain');
+        $('.netflixmain').addClass('shome');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".netflix").mouseout(function(){
+        $('.netflixmain').removeClass('shome');
+      });
+
+      $(".neteast").mouseover(function(){
+        console.log ("it worked");
+        $('.netflixmain').addClass('neteastmain');
+        $('.neteastmain').addClass('shome');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".neteast").mouseout(function(){
+        $('.neteastmain').removeClass('shome');
+      });
+
+
+
+      $(".windowin").click(function(){
+        $(this).addClass('windowout');
+        $('.par2').toggleClass('big');
+      });
+
+      $(".windowout").hover(function(){
+        $(this).toggleClass('windocontent');
+        $(this).addClass('shome');
+      });
+
+      $(".menuin").click(function(){
+        $(this).addClass('menu');
+        $('.par2').toggleClass('big');
+        $('.par3').addClass('big');
+      });
+
+      $(".menu").hover(function(){
+        $(this).toggleClass('windowin');
+        $(this).addClass('block');
+        $(this).addClass('protect');
+        $(this).addClass('report');
+      });
+
+      $(".block").click(function(){
+        $('.neteastmain').toggleClass('blockmain');
+        $(".blockmain").addClass('shome');
+        });
+
+    });
+
+  </script>
+
 <style>
 
 body {
@@ -16,6 +93,123 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
+.youtube {
+  position: absolute;
+  left:39%;
+  top:12%;
+  height:50px;
+  width:500px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.netflix {
+  position: absolute;
+  left:39%;
+  top:27%;
+  height:50px;
+  width:500px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.neteast {
+  position: absolute;
+  left:39%;
+  bottom:17%;
+  height:50px;
+  width:500px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.youtubemain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #29abe2;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  z-index: 998;
+}
+
+.netflixmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #29abe2;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  z-index: 998;
+}
+
+.neteastmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #29abe2;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  z-index: 998;
+}
+
+.shome {
+  opacity: 1;
+  transition: 1s;
+}
+
+.clicker {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 1;
+  background-image:url("PIC/logo.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    z-index: 999;
+}
+
+.clickerback {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+
+  border-radius: 0px 20px 20px 0px;
+  animation: makeit 3s; forwards;
+  transition: 2s;
+opacity: 0.7;
+  background-color: #4BE3E8;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
 
 .start {
       width: 0;
@@ -62,7 +256,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 20px 0px 0px;
-  background-color: #7ac943;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -91,8 +285,8 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #3fa9f5;
-  opacity: 1;
+  background-color: #91EAFF;
+  opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
 }
@@ -120,7 +314,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 20px 0px;
-  background-color: #ff931e;
+  background-color: #91EAFF;
   opacity: 1;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -148,7 +342,7 @@ opacity: 0.6;
   height:400px;
   width:300px;
   border-radius: 20px 20px 20px 20px;
-  background-color: #ff931e;
+  background-color: #29abe2;
   opacity: 0.9;
   animation: appea 1s; forwards;
   transition: 1s;
@@ -201,7 +395,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 20px 0px 0px 0px;
-  background-color: #ff1d25;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -229,7 +423,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #29abe2;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -257,7 +451,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 20px;
-  background-color: #f2dd20;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -332,11 +526,11 @@ opacity: 0.6;
       </a>
         <div class="thiefmain">
           <h1>Sharing status</h1>
-        Youtube is sharing searching result with Google.<br>
-        Youtube is sharing searching result with Amazon.<br>
-        Youtube is sharing searching result with Facebook.<br>
-        Youtube is sharing searching result with Twitter.<br>
-        Youtube is sharing searching result with Other.<br>
+        Youtube is sharing searching result with:<br>
+         Google;<br>
+        Amazon;<br>
+        Facebook;<br>
+        Twitter;<br>
         <br>
         <a href="seenpage.html">
         Learn More
@@ -345,6 +539,46 @@ opacity: 0.6;
 
 
     <div class="clicker"></div>
+    <div class="clickerback"></div>
+
+    <div class="youtubemain">
+      <h1>Sharing status</h1>
+    Youtube will sharing searching result with:<br>
+    Facebook<br>
+    Apple<br>
+    Instagram<br>
+    Amazon<br>
+    Google<br>
+    <br>
+    <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+    Learn More</a>
+    </div>
+
+    <div class="netflixmain">
+      <h1>Sharing status</h1>
+      Youtube will sharing searching result with:<br>
+      Facebook<br>
+      Apple<br>
+      Instagram<br>
+      Amazon<br>
+      Google<br>
+      <br>
+    <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+    Learn More</a>
+    </div>
+
+    <div class="neteastmain">
+      <h1>Sharing status</h1>
+      Youtube will sharing searching result with:<br>
+      Facebook<br>
+      Apple<br>
+      Instagram<br>
+      Amazon<br>
+      Google<br>
+      <br>
+    <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+    Learn More</a>
+    </div>
 
     <a href="block.html">
     <div class="block"></div>
@@ -360,6 +594,24 @@ opacity: 0.6;
     <div class="report"></div>
     <div class="reporticon"></div>
     </a>
+
+    <a href="youtube.html">
+    <div class="youtube"></div>
+    </a>
+
+    <a href="youtube.html" class="youtube-top">
+    <div class="youtube"></div>
+    </a>
+
+    <a href="youtube.html" class="youtube-top">
+    <div class="netflix"></div>
+    </a>
+
+    <a href="youtube.html" class="youtube-top">
+    <div class="neteast"></div>
+    </a>
+
+
 
 </body>
 </html>

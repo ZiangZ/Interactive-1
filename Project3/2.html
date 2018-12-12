@@ -61,7 +61,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 20px 0px 0px;
-  background-color: #7ac943;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -89,7 +89,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #3fa9f5;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -117,7 +117,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 20px 0px;
-  background-color: #ff931e;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -159,17 +159,32 @@ opacity: 0.6;
 
 .clicker {
   position: absolute;
-  top:6%;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 1;
+  background-image:url("PIC/logo.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    z-index: 999;
+}
+
+.clickerback {
+  position: absolute;
+  top:11%;
   left:0%;
   height:100px;
   width:100px;
 
   border-radius: 0px 20px 20px 0px;
   animation: appear 1s; forwards;
-  transition: 1s;
-
-  background-image:url("PIC/logo.png");
-  background-color: #7ac943;
+  transition: 2s;
+opacity: 1;
+  background-color: #4BE3E8;
   background-size: cover;
     background-repeat: no-repeat;
     background-position: 90% 90%;
@@ -217,9 +232,11 @@ opacity: 0.6;
     <div class="thieficon"></div>
 </a>
 
-<a href="seenpage.html">
+<a href="user.html">
 <div class="clicker"></div>
 </a>
+
+<div class="clickerback"></div>
 
 <a href="youtube.html">
 <div class="youtube"></div>

@@ -8,6 +8,83 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+
+      $(".js1").hover(function(){
+          $(this).toggleClass('change1');
+      });
+
+      $(".youtube").mouseover(function(){
+        console.log ("it worked");
+        $('.youtubemain').addClass('shome');
+        $('.thiefmain').addClass('youtubemain');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".youtube").mouseout(function(){
+        $('.youtubemain').removeClass('shome');
+      });
+
+      $(".netflix").mouseover(function(){
+        console.log ("it worked");
+        $('.youtubemain').addClass('netflixmain');
+        $('.netflixmain').addClass('shome');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".netflix").mouseout(function(){
+        $('.netflixmain').removeClass('shome');
+      });
+
+      $(".neteast").mouseover(function(){
+        console.log ("it worked");
+        $('.netflixmain').addClass('neteastmain');
+        $('.neteastmain').addClass('shome');
+        $(this).css("background-color", "pink");
+      });
+
+      $(".neteast").mouseout(function(){
+        $('.neteastmain').removeClass('shome');
+      });
+
+
+
+      $(".windowin").click(function(){
+        $(this).addClass('windowout');
+        $('.par2').toggleClass('big');
+      });
+
+      $(".windowout").hover(function(){
+        $(this).toggleClass('windocontent');
+        $(this).addClass('shome');
+      });
+
+      $(".menuin").click(function(){
+        $(this).addClass('menu');
+        $('.par2').toggleClass('big');
+        $('.par3').addClass('big');
+      });
+
+      $(".menu").hover(function(){
+        $(this).toggleClass('windowin');
+        $(this).addClass('block');
+        $(this).addClass('protect');
+        $(this).addClass('report');
+      });
+
+      $(".block").click(function(){
+        $('.neteastmain').toggleClass('blockmain');
+        $(".blockmain").addClass('shome');
+        });
+
+    });
+
+  </script>
+
 <style>
 
 body {
@@ -62,7 +139,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 20px 0px 0px;
-  background-color: #7ac943;
+  background-color: #91EAFF;
   opacity: 1;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -75,14 +152,16 @@ opacity: 0.6;
   height:400px;
   width:300px;
   border-radius: 20px 20px 20px 20px;
-  background-color: #7ac943;
-  opacity: 0.9;
-  animation: appea 1s; forwards;
+  background-color: #00CC66;
+  opacity: 1;
   transition: 1s;
   padding-left: 10px;
   color:white;
   font-family: 'Poppins', sans-serif;
 }
+
+
+
 .usericon {
   position: absolute;
   left:1%;
@@ -105,7 +184,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #3fa9f5;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -133,7 +212,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 20px 0px;
-  background-color: #ff931e;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -178,28 +257,8 @@ opacity: 0.6;
   100%{left:7.5%; opacity:0.9;}
 }
 
-.clicker {
-  position: absolute;
-  top:6%;
-  left:0%;
-  height:100px;
-  width:100px;
 
-  border-radius: 0px 20px 20px 0px;
-  animation: appear2 3s; forwards;
-  transition: 2s;
-opacity: 0;
-  background-image:url("PIC/logo.png");
-  background-color: #7ac943;
-  background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 90% 90%;
-}
 
-@keyframes appear2 {
-  0%{left:0%; opacity: 1}
-  100%{left:-600px; opacity: 0}
-}
 
 ///
 
@@ -224,7 +283,7 @@ opacity: 0;
   height:133px;
   width:100px;
   border-radius: 20px 0px 0px 0px;
-  background-color: #ff1d25;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -252,7 +311,7 @@ opacity: 0;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #29abe2;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -280,7 +339,7 @@ opacity: 0;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 20px;
-  background-color: #f2dd20;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -300,6 +359,7 @@ opacity: 0;
     animation: appear3 1s; forwards;
     transition: 1s;
 }
+
 
 @keyframes appear3 {
   0% {right:-600px;}
@@ -325,6 +385,56 @@ opacity: 0;
   opacity: 1;
 }
 
+.menuin {
+  position: absolute;
+  bottom:10%;
+  left:0%;
+  height:100px;
+  width:100px;
+
+  border-radius: 0px 20px 20px 0px;
+  animation: makeit 3s; forwards;
+  transition: 2s;
+opacity: 1;
+  background-color: #7ac943;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+.menu {
+  position: absolute;
+  bottom: 10%;
+  left:0%;
+  height:100px;
+  width:415px;
+
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 1;
+  background-color: #7ac943;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+
+
+span:block {
+  position: absolute;
+  left:0.5%;
+  bottom: 10%;
+  height:75px;
+  width:75px;
+  background-image:url("PIC/block.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    opacity: 1;
+    animation: appear3 1s; forwards;
+    transition: 1s;
+}
+
 .youtube {
   position: absolute;
   left:41%;
@@ -334,6 +444,166 @@ opacity: 0;
   background-color: white;
   opacity: 0.1;
 }
+
+.netflix {
+  position: absolute;
+  left:47%;
+  top:37%;
+  height:100px;
+  width:100px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.neteast {
+  position: absolute;
+  left:59%;
+  top:37%;
+  height:100px;
+  width:100px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.youtubemain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #00CC66;
+  opacity: 0;
+  animation: appea 1s; forwards;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.netflixmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #00CC66;
+  opacity: 0;
+  animation: appea 1s; forwards;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.neteastmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #00CC66;
+  opacity: 0;
+  animation: appea 1s; forwards;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.shome {
+  opacity: 1;
+  transition: 1s;
+}
+
+.clicker {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 1;
+  background-image:url("PIC/logo.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    z-index: 999;
+}
+
+.clickerback {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+
+  border-radius: 0px 20px 20px 0px;
+  animation: makeit 3s; forwards;
+  transition: 2s;
+opacity: 1;
+  background-color: #4BE3E8;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+.windowout {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:415px;
+
+  border-radius: 0px 20px 20px 0px;
+  animation: makeit 3s; forwards;
+  transition: 2s;
+opacity: 1;
+  background-color: #4BE3E8;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+.windowcontent {
+  position: absolute;
+  top:11%;
+  left:100px;
+  height:100px;
+  width:415px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 0;
+  background-color: #4BE3E8;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+.blockmain {
+  position: absolute;
+  right:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #ff1d25;
+  opacity: 0;
+  animation: appea 1s; forwards;
+  transition: 1s;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 5px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
 
 </style>
 </head>
@@ -356,6 +626,26 @@ opacity: 0;
     Google.com is accessing computer database.(Chrome.app)
   </div>
 
+  <div class="youtubemain">
+  <h1>Personal Info</h1>
+  Youtube.com will sharing your cookies.<br>
+  Youtube.com will get your location.<br>
+  Youtube.com will accessing computer database.(Chrome.app)<br>
+</div>
+
+<div class="netflixmain">
+<h1>Personal Info</h1>
+Netflix.com will sharing your cookies.<br>
+Netflix.com will know your searching history.<br><br>
+</div>
+
+<div class="neteastmain">
+<h1>Personal Info</h1>
+Neteast.com will sharing your cookies.<br>
+Neteast.com will know your location.<br><br>
+</div>
+
+
 <a href="location.html">
     <div class="location"></div>
     <div class="locationicon"></div>
@@ -366,7 +656,24 @@ opacity: 0;
     <div class="thieficon"></div>
   </a>
 
+<a href="user.html">
 <div class="clicker"></div>
+</a>
+
+
+<a href="youtube.html" class="youtube-top">
+<div class="youtube"></div>
+</a>
+
+<a href="youtube.html" class="youtube-top">
+<div class="netflix"></div>
+</a>
+
+<a href="youtube.html" class="youtube-top">
+<div class="neteast"></div>
+</a>
+
+<div class="clickerback"></div>
 
 <a href="block.html">
 <div class="block"></div>
@@ -381,10 +688,6 @@ opacity: 0;
 <a href="report.html">
 <div class="report"></div>
 <div class="reporticon"></div>
-</a>
-
-<a href="youtube.html">
-<div class="youtube"></div>
 </a>
 
 </body>

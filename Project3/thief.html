@@ -8,6 +8,47 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+
+$(document).ready(function(){
+
+  $(".youtube").mouseover(function(){
+    console.log ("it worked");
+    $('.youtubemain').addClass('shome');
+    $('.locationmain').addClass('youtubemain');
+    $(this).css("background-color", "pink");
+  });
+
+  $(".youtube").mouseout(function(){
+    $('.youtubemain').removeClass('shome');
+  });
+
+  $(".netflix").mouseover(function(){
+    console.log ("it worked");
+    $('.youtubemain').addClass('netflixmain');
+    $('.netflixmain').addClass('shome');
+    $(this).css("background-color", "pink");
+  });
+
+  $(".netflix").mouseout(function(){
+    $('.netflixmain').removeClass('shome');
+  });
+
+  $(".neteast").mouseover(function(){
+    console.log ("it worked");
+    $('.netflixmain').addClass('neteastmain');
+    $('.neteastmain').addClass('shome');
+    $(this).css("background-color", "pink");
+  });
+
+  $(".neteast").mouseout(function(){
+    $('.neteastmain').removeClass('shome');
+  });
+
+  });
+
+  </script>
 <style>
 
 body {
@@ -62,7 +103,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 20px 0px 0px;
-  background-color: #7ac943;
+  background-color: #91EAFF;
   opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -91,8 +132,8 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #3fa9f5;
-  opacity: 1;
+  background-color: #91EAFF;
+  opacity: 0.4;
   animation: appear 1s; forwards;
   transition: 1s;
 }
@@ -107,7 +148,7 @@ opacity: 0.6;
   background-size: cover;
     background-repeat: no-repeat;
     background-position: 10% 10%;
-    opacity: 0.4;
+    opacity: 1;
     animation: appear 1s; forwards;
     transition: 1s;
 }
@@ -120,7 +161,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 20px 0px;
-  background-color: #ff931e;
+  background-color: #91EAFF;
   opacity: 1;
   animation: appear 1s; forwards;
   transition: 1s;
@@ -148,9 +189,8 @@ opacity: 0.6;
   height:400px;
   width:300px;
   border-radius: 20px 20px 20px 20px;
-  background-color: #ff931e;
-  opacity: 0.9;
-  animation: appea 1s; forwards;
+  background-color: #29abe2;
+  opacity: 1;
   transition: 1s;
   padding-left: 10px;
   color:white;
@@ -201,7 +241,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 20px 0px 0px 0px;
-  background-color: #ff1d25;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -229,7 +269,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 0px;
-  background-color: #29abe2;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -257,7 +297,7 @@ opacity: 0.6;
   height:133px;
   width:100px;
   border-radius: 0px 0px 0px 20px;
-  background-color: #f2dd20;
+  background-color: #49757F;
   opacity: 0.4;
   animation: appear3 1s; forwards;
   transition: 1s;
@@ -303,6 +343,126 @@ opacity: 0.6;
 }
 
 
+.youtube {
+  position: absolute;
+  left:41%;
+  top:37%;
+  height:100px;
+  width:100px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.netflix {
+  position: absolute;
+  left:47%;
+  top:37%;
+  height:100px;
+  width:100px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.neteast {
+  position: absolute;
+  left:59%;
+  top:37%;
+  height:100px;
+  width:100px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.youtubemain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #29abe2;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.netflixmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #29abe2;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.neteastmain {
+  position: absolute;
+  left:7.5%;
+  top:25%;
+  height:400px;
+  width:300px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #FF5F5B;
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  animation: flash 1s; infinite alternate;
+  transition: 2s;
+}
+
+.shome {
+  opacity: 1;
+  transition: 1s;
+}
+@keyframes flash4 {
+  0% {opacity: 1;}
+  100% {opacity: 0.5;}
+
+}
+
+.clickerback {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+
+  border-radius: 0px 20px 20px 0px;
+  animation: makeit 3s; forwards;
+  transition: 2s;
+opacity: 1;
+  background-color: #4BE3E8;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+}
+
+.clicker {
+  position: absolute;
+  top:11%;
+  left:0%;
+  height:100px;
+  width:100px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 2s;
+opacity: 1;
+  background-image:url("PIC/logo.png");
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    z-index: 999;
+}
+
 </style>
 </head>
 
@@ -330,18 +490,60 @@ opacity: 0.6;
         <div class="thief"></div>
         <div class="thieficon"></div>
       </a>
-      <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+
+
         <div class="thiefmain">
           <h1>Sharing status</h1>
-        Google is sharing searching result with Facebook.<br>
-        Google is sharing searching result with Youtube.<br>
-        Google is sharing searching result with Instagram.<br>
-        Google is sharing searching result with Amazon.<br>
-        Google is sharing searching result with Google.<br>
+        Google is sharing searching result with:<br>
+        Facebook<br>
+        Youtube<br>
+        Instagram<br>
+        Amazon<br>
+        Google<br>
         <br>
-        Learn More
+        <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+        Learn More</a>
         </div>
-            </a>
+
+        <div class="youtubemain">
+          <h1>Sharing status</h1>
+        Youtube will sharing searching result with:<br>
+        Facebook<br>
+        Apple<br>
+        Instagram<br>
+        Amazon<br>
+        Google<br>
+        <br>
+        <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+        Learn More</a>
+        </div>
+
+        <div class="netflixmain">
+          <h1>Sharing status</h1>
+        Netflix will sharing searching result with:<br>
+        Google<br>
+        Amazon<br>
+        <br>
+        <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+        Learn More</a>
+        </div>
+
+        <div class="neteastmain">
+          <h1>Sharing status<br>
+            (Risky)</h1>
+        Neteast will sharing location with:<br>
+        Baidu(Risk)<br>
+        Neteast will sharing cookies with:<br>
+        Baidu(Risk)<br>
+        Neteast will sharing searching result with:<br>
+        NeteastCloud(Risk)<br>
+        Google<br>
+
+        <br>
+        <a href="https://support.google.com/chrome/answer/114836?visit_id=1543871658311-8198751382179217114&p=settings_privacy&rd=1">
+        Learn More</a>
+        </div>
+
 
     <div class="clicker"></div>
 
@@ -360,5 +562,19 @@ opacity: 0.6;
     <div class="reporticon"></div>
     </a>
 
+    <a href="youtube.html" class="youtube-top">
+    <div class="youtube"></div>
+    </a>
+
+    <a href="youtube.html" class="youtube-top">
+    <div class="netflix"></div>
+    </a>
+
+    <a href="youtube.html" class="youtube-top">
+    <div class="neteast"></div>
+    </a>
+
+<div class="clicker"></div>
+<div class="clickerback"></div>
 </body>
 </html>
