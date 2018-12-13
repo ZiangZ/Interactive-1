@@ -1,0 +1,484 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="4">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Faster+One|Muli:900|Raleway|Ubuntu" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+
+    </script>
+
+<style>
+
+body {
+  background-color: black;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+                    .back1yellow{
+                    position: absolute;
+                    left:85%;
+                    width:7%;
+                    background-color: #d2a000;
+                    height: 100%;
+                    animation: moving1 7s infinite alternate;
+                    transition: 3s;
+                    opacity:0.5;
+                    }
+                    .back2blue{
+                    position: absolute;
+                    left:90%;
+                    width:5%;
+                    background-color: #231eac;
+                    height: 100%;
+                    animation: moving2 7s infinite alternate;
+                    transition: 3s;
+                    opacity:0.5;
+                    }
+                    .back3red{
+                    position: absolute;
+                    left:95%;
+                    width:3%;
+                    background-color: #ad0000;
+                    height: 100%;
+                    animation: moving3 7s infinite alternate;
+                    transition: 3s;
+                    opacity:0.5;
+                    }
+
+                    @keyframes moving1 {
+                      0% {left: 85%; width: 7%;}
+                      50% {left: 70%; width: 10%;}
+                      100% {left: 80%; width :5%;}
+                    }
+                    @keyframes moving2 {
+                      0% {left: 90%; width: 5%;}
+                      50% {left: 95%; width: 8%;}
+                      75% {left: 75%; width: 15%;}
+                      100% {left: 85%; width :20%;}
+                    }
+                    @keyframes moving3 {
+                      0% {left: 95%; width: 3%;}
+                      50% {left: 65%; width: 12%;}
+                      100% {left: 90%; width :5%;}
+                    }
+                    .logo {
+                      position: absolute;
+                      TOP:30%;
+                      LEFT:35.5%;
+                      right:35.5%;
+                        height:185.4px;
+                        width: 522px;
+                        animation: logo 1s forwards;
+                    }
+
+                    .loadingicon{
+                      position: absolute;
+                      TOP:26px;
+                      LEFT:30px;
+                        height:auto;
+                        height: 48px;
+                        width:64px;
+                        opacity: 1;
+                        animation: mainloading 1s forwards;
+                        animation-delay: 1s;
+                    }
+
+                    .greenicon {
+                      position: absolute;
+                      left:15px;
+                      top: 38px;
+                      height:20px;
+                      width:20px;
+                      opacity: 1;
+                      border-radius: 100%;
+                      background-color: green;
+
+                    }
+
+                    .cloud {
+                      position: absolute;
+                      left:90px;
+                      top: 24px;
+                      height: 50px;
+                      width:50px;
+                      opacity: 1;
+
+
+                    }
+
+                    .cloud:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+                    .user {
+                      position: absolute;
+                      left:150px;
+                      top: 25px;
+                      height: 40px;
+                      width:40px;
+                      opacity: 1;
+                    }
+
+                    .user:hover{
+                      transition: 0.2s;
+                      transform: scale(1.3);
+                    }
+
+                                  .thumper {
+                                    height:500px;
+                                    width:500px;
+                                    position: absolute;
+                                    top:13%;
+                                    left:15px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.1s;
+                                    opacity: 0;
+                                  }
+
+                                  .title{
+                                    position: absolute;
+                                    top:11%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:80px;
+                                    color: white;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.1s;
+                                    opacity: 0;
+                                  }
+
+
+                                  .clouddown {
+                                    position: absolute;
+                                    top:13%;
+                                    left:900px;
+                                    height:80px;
+                                    width: 80px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.1s;
+                                    opacity: 0;
+                                  }
+
+                                  .workable{
+                                    position: absolute;
+                                    top:32%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:30px;
+                                    color: #00913a;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.1s;
+                                    opacity: 0;
+                                  }
+
+                                  .os{
+                                    position: absolute;
+                                    top:25%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:28px;
+                                    color: white;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.2s;
+                                    opacity: 0;
+                                  }
+
+                                  .hardware{
+                                    position: absolute;
+                                    top:39%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:28px;
+                                    color: white;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.2s;
+                                    opacity: 0;
+                                  }
+
+                                  .vr{
+                                    position: absolute;
+                                    top:46%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:28px;
+                                    color: white;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.2s;
+                                    opacity: 0;
+                                  }
+
+                                  .check1 {
+                                    position: absolute;
+                                    top:46%;
+                                    left:1000px;
+                                    height:40px;
+                                    width:40px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.35s;
+                                    opacity: 0;
+                                  }
+
+                                  .check2 {
+                                    position: absolute;
+                                    top:39%;
+                                    left:1000px;
+                                    height:40px;
+                                    width:40px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.40s;
+                                    opacity: 0;
+                                  }
+
+                                  .check3 {
+                                    position: absolute;
+                                    top:25%;
+                                    left:1000px;
+                                    height:40px;
+                                    width:40px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.45s;
+                                    opacity: 0;
+                                  }
+
+
+                                  .check4 {
+                                    position: absolute;
+                                    top:32%;
+                                    left:1000px;
+                                    height:40px;
+                                    width:40px;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.5s;
+                                    opacity: 0;
+                                  }
+
+                                  .web {
+                                    position: absolute;
+                                    bottom:35%;
+                                    left:530px;
+                                    text-align: left;
+                                    font-family: 'Muli',Bold; sans-serif;
+                                    font-size:18px;
+                                    color: white;
+                                    animation: main 1s forwards;
+                                    animation-delay: 0.2s;
+                                    opacity: 0;
+                                  }
+
+                                  .title:hover {
+                                    transition: 0.2s;
+                                    color: green;
+                                  }
+                                  .web:hover {
+                                    transition: 0.2s;
+                                    color: yellow;
+                                  }
+
+
+.screenshot{
+  position: absolute;
+  bottom:30%;
+  left:15px;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Muli',Bold; sans-serif;
+  color:white;
+  animation: main 1s forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.sc1 {
+  position: absolute;
+  bottom:5%;
+  left:15px;
+  height:230px;
+  width:300px;
+  animation: main 1s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.sc2 {
+  position: absolute;
+  bottom:5%;
+  left:330px;
+  height:230px;
+  width:300px;
+  animation: main 1s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.sc3 {
+  position: absolute;
+  bottom:5%;
+  left:645px;
+  height:230px;
+  width:300px;
+  animation: main 1s forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+                                                          h1 {
+                                                            margin:1em auto;
+                                                            position: absolute;
+                                                            bottom: 2px;
+                                                            left: 15px;
+                                                            font-family: 'Muli',Bold; sans-serif;
+                                                            font-size:15px;
+                                                            color:GREY;
+                                                          }
+                                                          span:AFTER {
+                                                            content:"32";
+                                                            animation:change 8s infinite;
+                                                          }
+                                                          @keyframes change{
+                                                            0% {
+                                                              content:"121";
+                                                            }
+                                                            25% {
+                                                              content:"178";
+                                                            }
+                                                            35% {
+                                                              content:"91";
+                                                            }
+                                                            50% {
+                                                              content:"105";
+                                                            }
+                                                            75% {
+                                                              content:"148";
+                                                            }
+                                                            100% {
+                                                              content:"77";
+                                                            }
+                                                          }
+
+                            @keyframes logo {
+                              0% {  top:-5%; transform: scale(0.3)}
+                              100% { top:-5%; transform: scale(0.3) }
+                            }
+
+
+
+                            @keyframes mainloading {
+                              0%   {opacity: 0;}
+                              50%  {opacity: 1;}
+                              100% {opacity: 0;}
+                            }
+
+
+                            @keyframes cloudicon {
+                              0%   {opacity: 0;}
+                              100% {opacity: 1;}
+                            }
+
+                            .tback {
+                              position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            background-image: url("game/12.png");
+                            background-size: cover;
+                            animation: background1 1s forwards;
+                            transition: 3s;
+                            opacity: 0;
+                            animation-delay: 1s;
+                            }
+
+                            @keyframes background1 {
+                              0% {opacity: 0}
+                              100% {opacity: 1; }
+                            }
+
+                            @keyframes main {
+                              0%   {opacity: 0;}
+                              100% {opacity: 1;}
+                            }
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+<div class="tback"></div>
+  <div class="back1yellow"></div>
+  <div class="back2blue"></div>
+  <div class="back3red"></div>
+  <div class="greenicon"></div>
+
+  <a href="MAIN.HTML">
+<a href="main.html">
+<div class="logo"> <img src="618/NONCLOUD.png"> </div>
+</A>
+
+<div class="loadingicon"> <img src="618/loading.gif"> </div>
+
+<a href="cloud.html">
+<div class="cloud"><img src="icons/cloud.png"></div>
+</a>
+
+<a href="user.html">
+<div class="user"><img src="icons/user.png"></div>
+</a>
+
+
+<a href="thumperdown.html">
+<div class="thumper"><img src="GAME/thumper.jpg"></div>
+</a>
+
+<a href="thumperdown.html">
+<div class="title">Thumper</div>
+</a>
+<a href="thumperdown.html">
+<div class="clouddown"><img src="ICONS/D1.PNG"></DIV>
+</a>
+
+<div class="workable">Cloud Accessible</div>
+<div class="os">OS: MAC10.3+/WINDOWS10+</div>
+<div class="hardware">Hardwave Adaptable</div>
+<div class="vr">VR</div>
+<a href="http://thumpergame.com">
+<div class="web">thumpergame.com All Right Reserved.</div>
+</a>
+
+<div class="check1"><img src="icons/check.png"></div>
+<div class="check2"><img src="icons/check.png"></div>
+<div class="check3"><img src="icons/check.png"></div>
+<div class="check4"><img src="icons/check.png"></div>
+<div class="screenshot">ScreenShots</div>
+
+<div class="sc1"><img src="GAME/t1.png"></div>
+<div class="sc2"><img src="GAME/t2.jpg"></div>
+<div class="sc3"><img src="GAME/t3.jpeg"></div>
+
+<!-- FROM CODEPEN -->
+<h1><span></span>GB/S.</h1>
+
+</body>
+</html>
